@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Anirudh's Projects</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Home</a>
+				<span style="margin: 0 10px;"></span>
+				<a href="All projects.html" class="title">Projects</a>
+<!-- 				
+				<nav>
+					<ul>
+						<li><a href="All projects.html">Home</a></li>
+					
+						
+					</ul>
+				</nav> -->
+			</header>
+			<div class="line-container"></div>
+
+		<!-- Wrapper -->
+		<div id="wrapper" class="wrapA">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Search Engine using TF-IDF & Cosine Similarity</h1>
+							<span class="image fit" style="display: flex; justify-content: center; align-items: center;">
+								<img src="images\image.png" alt="" style="width: 50%; height: 80%;" />
+							</span>
+							
+							<p style="text-align: justify; font-size: 30px; margin-bottom: 20px; font-family: 'Times New Roman'; color: white;"> 
+                                • Developed a custom search engine to retrieve the most relevant U.S. presidential inaugural speech based on a user’s search query.
+                            </p>
+                            <p style="text-align: justify; font-size: 30px; margin-bottom: 20px; font-family: 'Times New Roman'; color: white;"> 
+                                • Implemented a full-text retrieval pipeline using TF-IDF weighting and Cosine Similarity for accurate document ranking and scoring.
+                            </p>
+                            <p style="text-align: justify; font-size: 30px; margin-bottom: 20px; font-family: 'Times New Roman'; color: white;"> 
+                                • Preprocessed over 50 historical speech documents, including tokenization, stop-word removal, stemming (using NLTK), and normalization.
+                            </p>
+                            <p style="text-align: justify; font-size: 30px; margin-bottom: 20px; font-family: 'Times New Roman'; color: white;"> 
+                                • Constructed an inverted index (postings list) mapping terms to their weighted document occurrences, sorted by relevance scores.
+                            </p>
+                            <p style="text-align: justify; font-size: 30px; margin-bottom: 20px; font-family: 'Times New Roman'; color: white;"> 
+                                • Built a query processor that dynamically computes similarity scores between a user query and all document vectors using normalized TF-IDF.
+                            </p>
+                            <p style="text-align: justify; font-size: 30px; margin-bottom: 20px; font-family: 'Times New Roman'; color: white;"> 
+                                • Implemented a top-K retrieval mechanism, limiting results to the highest scoring documents and optimizing query response time.
+                            </p>
+                            <p style="text-align: justify; font-size: 30px; margin-bottom: 20px; font-family: 'Times New Roman'; color: white;"> 
+                                • Added upper-bound scoring for early termination, allowing the system to skip deeper document scans when confidence in top results is high.
+                            </p>
+                            <p style="text-align: justify; font-size: 30px; margin-bottom: 20px; font-family: 'Times New Roman'; color: white;"> 
+                                • Designed a scalable query loop, progressively expanding the document search scope when relevance is ambiguous—balancing recall and performance.
+                            </p>
+                            
+                            
+
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<!-- <footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						
+					</ul>
+				</div>
+			</footer> -->
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
