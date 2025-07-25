@@ -3943,4 +3943,49 @@ input, select, textarea {
 		background: linear-gradient(to right, #5e42a6, #b74e91); /* Gradient styling */
 		border-radius: 1px; /* Optional: rounded edges */
 	}
+
+
+/* certificates */
+.certificate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(520px, 1fr));
+  gap: 20px;
+}
 	
+  .certificate-box {
+    display: flex;
+    align-items: center;
+    background-color: #2d2c32;
+    border: 1px solid #444;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    color: white;
+    max-width: 700px;
+  }
+
+  .certificate-img {
+    width: 120px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 6px;
+  }
+
+  .certificate-line {
+    width: 2px;
+    height: 100px;
+    background-color: #666;
+    margin: 0 20px;
+  }
+
+  .certificate-info h3 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    color: white;
+  }
+
+  .certificate-info p {
+    margin: 0;
+    font-size: 18px;
+    color: #aaa;
+  }
