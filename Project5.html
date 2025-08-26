@@ -40,41 +40,58 @@
 
 				<!-- Main -->
 					<section id="main" class="wrapper">
-						<div class="inner">
-							<h1 class="major">LLM-Powered Cold Email Generator for Job Applications</h1>
-							<span class="image fit" style="display: flex; justify-content: center; align-items: center;">
-								<img src="images\llm.png" alt="" style="width: 50%; height: 80%;" />
-							</span>
-							
-							
-                            <p style="text-align: justify; font-size: 30px; margin-bottom: 20px; font-family: 'Times New Roman'; color: white;"> 
-                                • Built an AI-powered job application assistant using Groq-hosted LLaMA 3.3-70B, LangChain, and Prompt Engineering to generate personalized cold emails for job applications.
-                            </p>
-                            <p style="text-align: justify; font-size: 30px; margin-bottom: 20px; font-family: 'Times New Roman'; color: white;"> 
-                                • Created a user-friendly Streamlit interface where users can input a job posting URL and instantly receive a custom cold email draft tailored to that job.
-                            </p>
-                            <p style="text-align: justify; font-size: 30px; margin-bottom: 20px; font-family: 'Times New Roman'; color: white;"> 
-                                • Integrated web scraping with LangChain’s WebBaseLoader to extract job details from career pages dynamically.
-                            </p>
-                            <p style="text-align: justify; font-size: 30px; margin-bottom: 20px; font-family: 'Times New Roman'; color: white;"> 
-                                • Used advanced prompt engineering to transform scraped, unstructured job data into structured JSON (role, experience, skills, description).
-                            </p>
-                            <p style="text-align: justify; font-size: 30px; margin-bottom: 20px; font-family: 'Times New Roman'; color: white;"> 
-                                • Implemented a ChromaDB vector store to semantically match job-required skills with relevant projects from a user’s portfolio.
-                            </p>
-                            <p style="text-align: justify; font-size: 30px; margin-bottom: 20px; font-family: 'Times New Roman'; color: white;"> 
-                                • Built a Retrieval-Augmented Generation (RAG) workflow, enabling context-aware email generation based on job descriptions and past work.
-                            </p>
-                            <p style="text-align: justify; font-size: 30px; margin-bottom: 20px; font-family: 'Times New Roman'; color: white;"> 
-                                • Chained LangChain components to automate the flow from data extraction → portfolio retrieval → personalized email creation.
-                            </p>
-                            <p style="text-align: justify; font-size: 30px; margin-bottom: 20px; font-family: 'Times New Roman'; color: white;"> 
-                                • Demonstrated real-world productivity gains by reducing manual job outreach efforts through intelligent LLM-driven automation.
-                            </p>
-                            
+    <div class="inner">
+        <h1 class="major">LLM-Powered Cold Email Generator for Job Applications</h1>
 
-						</div>
-					</section>
+        <span class="image fit" style="display: flex; justify-content: center; align-items: center;">
+            <img src="images/LLM Cold Email .png" alt="" style="width: 70%; height: 80%;" />
+        </span>
+
+        <!-- Section 1: What This Project Does -->
+        <h2 style="color: white; font-family: 'Times New Roman'; font-size: 34px;">1. What This Project Does</h2>
+        <p style="text-align: justify; font-size: 30px; margin-bottom: 20px; font-family: 'Times New Roman'; color: white;">
+            This project is an AI-powered job application assistant designed to streamline the process of cold emailing for job applications. It takes a job posting URL as input and instantly generates a personalized cold email tailored to that specific job. The goal is to reduce the manual effort typically required in outreach and make the process intelligent, fast, and highly relevant to each opportunity.
+        </p>
+
+        <!-- Section 2: Project Workflow -->
+        <h2 style="color: white; font-family: 'Times New Roman'; font-size: 34px;">2. Project Workflow</h2>
+        <ul style="font-size: 30px; font-family: 'Times New Roman'; color: white; margin-bottom: 20px;">
+			<li>When a user provides a job description link, the assistant dynamically scrapes job details from the corresponding career page using LangChain’s WebBaseLoader.</li>
+
+            
+            <li>Used prompt engineering to convert the scraped, unstructured job data into structured JSON (role, experience, skills, description).</li>
+            <li>Matched job-required skills with relevant portfolio projects using ChromaDB’s vector store for semantic similarity.</li>
+            <li>Implemented a Retrieval-Augmented Generation (RAG) workflow to generate context-aware emails based on job descriptions and user experience.</li>
+            <li>Chained LangChain components to automate the complete flow from data extraction to personalized email generation.</li>
+        </ul>
+
+        <!-- Section 3: Results and Impact -->
+        <h2 style="color: white; font-family: 'Times New Roman'; font-size: 34px;">3. Results and Impact</h2>
+        <p style="text-align: justify; font-size: 30px; margin-bottom: 20px; font-family: 'Times New Roman'; color: white;">
+            This assistant demonstrated real-world productivity improvements by significantly reducing the time and manual effort involved in cold outreach. The intelligent use of large language models and automated workflows helped streamline the job application process and made personalized communication far more efficient.
+        </p>
+
+        <!-- Section 4: Summary -->
+        <h2 style="color: white; font-family: 'Times New Roman'; font-size: 34px;">4. Summary</h2>
+        <p style="text-align: justify; font-size: 30px; margin-bottom: 20px; font-family: 'Times New Roman'; color: white;">
+            The project combines advanced AI capabilities with practical automation to simplify job outreach. By scraping job listings, structuring the data intelligently, matching it with relevant experience, and generating custom cold emails through a smooth, automated workflow, it delivers a powerful tool for job seekers looking to scale their outreach efforts without sacrificing personalization.
+        </p>
+
+        <!-- Tech Stack -->
+        <h2 style="color: white; font-family: 'Times New Roman'; font-size: 34px;">Tech Stack</h2>
+        <ul style="font-size: 30px; font-family: 'Times New Roman'; color: white; margin-bottom: 20px;">
+            <li>Groq-hosted LLaMA 3.3-70B</li>
+            <li>LangChain</li>
+            <li>Prompt Engineering</li>
+            <li>Streamlit</li>
+            <li>WebBaseLoader</li>
+            <li>ChromaDB</li>
+            <li>Retrieval-Augmented Generation (RAG)</li>
+        </ul>
+
+    </div>
+</section>
+
 
 			</div>
 
