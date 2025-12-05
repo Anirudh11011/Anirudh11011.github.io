@@ -47,73 +47,56 @@
 							</span>
 							
 							
-							<p style="text-align: justify; font-size: 30px; margin-bottom: 20px; font-family: 'Times New Roman'; color: white;">
-• University students spend excessive time switching between platforms for tasks like booking study rooms, sending emails, or finding campus information.  
+							<!-- Section 1: What This Project Does -->
+<h2 style="color: white; font-family: 'Times New Roman'; font-size: 34px;">1. What This Project Does</h2>
+<p style="text-align: justify; font-size: 30px; margin-bottom: 20px; font-family: 'Times New Roman'; color: white;">
+    The Agentic Campus Assistant is an AI-powered autonomous conversational system built to simplify everyday university tasks such as booking study rooms, sending official emails, retrieving campus information, and navigating university locations. Through a single voice or chat interface, students can issue natural language commands that the assistant understands, reasons over, and executes end-to-end, eliminating the need to switch between multiple platforms and streamlining campus productivity.
 </p>
 
+<!-- Section 2: Project Workflow -->
+<h2 style="color: white; font-family: 'Times New Roman'; font-size: 34px;">2. Project Workflow</h2>
+<ul style="font-size: 30px; font-family: 'Times New Roman'; color: white; margin-bottom: 20px;">
+    <li>Students interact with the assistant using natural text or voice commands such as “Book a study room tomorrow at 3 PM” or “Email my professor about office hours.”</li>
+    <li>Integrated the OpenAI Whisper API to convert voice input into accurate text for hands-free operation.</li>
+    <li>Designed an agentic reasoning architecture powered by Gemini 2.5 Flash that breaks down requests into actionable multi-step plans.</li>
+    <li>Implemented the <b>Model Context Protocol</b> (MCP) to dynamically manage tool selection and route tasks to appropriate APIs or automation modules.</li>
+    <li>Built a <b>Retrieval-Augmented Generation</b> (RAG) pipeline combining the Google Search API for real-time campus data retrieval with ChromaDB for vector-based memory and semantic grounding.</li>
+    <li>Used LangChain to orchestrate prompt chaining, contextual memory, reasoning workflows, and tool execution.</li>
+    <li>Integrated Gmail API to autonomously draft and send emails based on conversational intent.</li>
+    <li>Used Playwright automation to book study rooms and submit university forms through controlled browser workflows.</li>
+    <li>Connected the Google Maps API to provide campus navigation, route generation, and location insights.</li>
+    <li>Added a human-in-the-loop verification layer to ensure user approval for sensitive actions such as sending emails or confirming reservations.</li>
+    <li>Developed a Gradio-based frontend supporting real-time chat and voice conversation for an intuitive user experience.</li>
+</ul>
+
+<!-- Section 3: Results and Impact -->
+<h2 style="color: white; font-family: 'Times New Roman'; font-size: 34px;">3. Results and Impact</h2>
 <p style="text-align: justify; font-size: 30px; margin-bottom: 20px; font-family: 'Times New Roman'; color: white;">
-• Identified the need for an autonomous conversational assistant capable of understanding instructions, reasoning intelligently, and executing real-world actions seamlessly.  
+    The Agentic Campus Assistant achieved measurable improvements in student productivity by reducing task completion time by approximately 70%. Users completed complex workflows with minimal input, benefiting from voice-controlled accessibility, intelligent task orchestration, and seamless real-world execution. The system demonstrated true agentic behavior by independently planning, reasoning, and acting to accomplish user goals.
 </p>
 
+<!-- Section 4: Summary -->
+<h2 style="color: white; font-family: 'Times New Roman'; font-size: 34px;">4. Summary</h2>
 <p style="text-align: justify; font-size: 30px; margin-bottom: 20px; font-family: 'Times New Roman'; color: white;">
-• Developed an agentic AI assistant that can reason over commands, retrieve live university data, and perform autonomous actions using natural text or voice-based interaction.  
+    This project combines advanced agentic AI reasoning with real-world automation to create a unified campus productivity platform. By integrating multi-step planning, retrieval-augmented generation, dynamic tool selection via MCP, and direct API/browser automation, the assistant enables students to delegate everyday campus tasks to a single conversational interface, saving time while improving efficiency, accessibility, and engagement.
 </p>
 
-<p style="text-align: justify; font-size: 30px; margin-bottom: 20px; font-family: 'Times New Roman'; color: white;">
-• Designed an agentic architecture powered by Gemini 2.5 Flash LLM to plan and execute multi-step actions with minimal user supervision.  
-</p>
+<!-- Tech Stack -->
+<h2 style="color: white; font-family: 'Times New Roman'; font-size: 34px;">Tech Stack</h2>
+<ul style="font-size: 30px; font-family: 'Times New Roman'; color: white; margin-bottom: 20px;">
+    <li>Gemini 2.5 Flash LLM</li>
+    <li>LangChain</li>
+    <li>Model Context Protocol (MCP)</li>
+    <li>ChromaDB</li>
+    <li>Retrieval-Augmented Generation (RAG)</li>
+    <li>Google Search API</li>
+    <li>Gmail API</li>
+    <li>Google Maps API</li>
+    <li>Playwright Automation</li>
+    <li>OpenAI Whisper (Speech-to-Text)</li>
+    <li>Gradio</li>
+</ul>
 
-<p style="text-align: justify; font-size: 30px; margin-bottom: 20px; font-family: 'Times New Roman'; color: white;">
-• Built a Retrieval-Augmented Generation (RAG) pipeline integrating Google Search API for real-time retrieval and ChromaDB as a vector store for contextual memory and semantic grounding.  
-</p>
-
-<p style="text-align: justify; font-size: 30px; margin-bottom: 20px; font-family: 'Times New Roman'; color: white;">
-• Utilized LangChain for orchestrating LLM workflows, memory management, and prompt chaining, ensuring coherent reasoning and execution flow.  
-</p>
-
-<p style="text-align: justify; font-size: 30px; margin-bottom: 20px; font-family: 'Times New Roman'; color: white;">
-• Implemented Model Context Protocol (MCP) to dynamically manage tools and enable context-driven selection of APIs and automation modules.  
-</p>
-
-<p style="text-align: justify; font-size: 30px; margin-bottom: 20px; font-family: 'Times New Roman'; color: white;">
-• Integrated Gmail API to autonomously compose and send emails based on conversational intent.  
-</p>
-
-<p style="text-align: justify; font-size: 30px; margin-bottom: 20px; font-family: 'Times New Roman'; color: white;">
-• Employed Playwright automation to book study spaces and complete form submissions through browser automation.  
-</p>
-
-<p style="text-align: justify; font-size: 30px; margin-bottom: 20px; font-family: 'Times New Roman'; color: white;">
-• Connected Google Maps API to provide navigation details, route generation, and campus location insights.  
-</p>
-
-<p style="text-align: justify; font-size: 30px; margin-bottom: 20px; font-family: 'Times New Roman'; color: white;">
-• Added a human-in-the-loop verification system to maintain safety and user control during sensitive automated actions such as email dispatch or reservations.  
-</p>
-
-<p style="text-align: justify; font-size: 30px; margin-bottom: 20px; font-family: 'Times New Roman'; color: white;">
-• Integrated OpenAI Whisper API for speech-to-text functionality, enabling complete voice-based operation.  
-</p>
-
-<p style="text-align: justify; font-size: 30px; margin-bottom: 20px; font-family: 'Times New Roman'; color: white;">
-• Developed an interactive Gradio frontend supporting both chat and voice interaction for an intuitive user experience.  
-</p>
-
-<p style="text-align: justify; font-size: 30px; margin-bottom: 20px; font-family: 'Times New Roman'; color: white;">
-• Delivered an autonomous, action-driven AI assistant capable of executing end-to-end student tasks with contextual understanding and minimal input.  
-</p>
-
-<p style="text-align: justify; font-size: 30px; margin-bottom: 20px; font-family: 'Times New Roman'; color: white;">
-• Demonstrated true agentic behavior, allowing the assistant to plan, reason, and act (e.g., “Book a study room for tomorrow at 3 PM”).  
-</p>
-
-<p style="text-align: justify; font-size: 30px; margin-bottom: 20px; font-family: 'Times New Roman'; color: white;">
-• Reduced student task completion time by approximately 70%, improving efficiency, accessibility, and engagement.  
-</p>
-
-<p style="text-align: justify; font-size: 30px; margin-bottom: 20px; font-family: 'Times New Roman'; color: white;">
-• Created a voice-enabled, RAG-enhanced, and MCP-managed ecosystem integrating reasoning, retrieval, and real-world automation into one intelligent assistant.  
-</p>
 
 							
 
